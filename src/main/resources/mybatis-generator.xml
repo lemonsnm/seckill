@@ -25,7 +25,7 @@
         </javaModelGenerator>
         <!-- 生成映射文件存放位置 -->
         <sqlMapGenerator targetPackage="mapping" targetProject="src/main/resources">
-            <property name="enableSubPackages" value="true"/>
+            <property name="enab     leSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成Dao类存放位置-->
         <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
@@ -37,8 +37,8 @@
         </javaClientGenerator>
 
         <!-- 生成对应表及类名-->
-        <table tableName="user_info" domainObjectName="UserDO"></table>
-        <table tableName="user_password" domainObjectName="UserPasswordDO"></table>
+        <table tableName="user_info" domainObjectName="UserDO" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="user_password" domainObjectName="UserPasswordDO" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
 
     </context>
 </generatorConfiguration>
