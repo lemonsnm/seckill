@@ -1,6 +1,7 @@
 package com.lemon.controller.viewobject;
 
 /**
+ * 前台展示信息：
  * @author lemonsun
  */
 public class UserVO {
