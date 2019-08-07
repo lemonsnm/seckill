@@ -1,6 +1,8 @@
 package com.lemon.controller;
 
 import com.lemon.controller.viewobject.UserVO;
+import com.lemon.error.BusinessException;
+import com.lemon.error.EmBusinessError;
 import com.lemon.response.CommonReturnType;
 import com.lemon.service.UserService;
 import com.lemon.service.model.UserModel;
@@ -23,16 +25,20 @@ public class UserController {
 
     @RequestMapping("/get")
     @ResponseBody
-    public CommonReturnType getUser(@RequestParam(name = "id")Integer id){
+    public CommonReturnType getUser(@RequestParam(name = "id")Integer id) throws BusinessException {
         //调取service服务获取对应id的用户对象并返回给前端
         UserModel userModel = userService.getUserById(id);
+        //若获取的对应用户信息不存在
+        if(userModel == null){
+            throw new BusinessException(EmBusinessError.USER_NOT_EXIST);
+        }
         //将核心领域模型用户对象转换为可供UI使用的viewobject
         UserVO userVO = convertFromModel(userModel);
         //返回通用对象
         return CommonReturnType.create(userVO);
     }
 
-    //将UserModel转换为UserDO  信息安全
+    //将UserModel转换为UserDO  保证信息安全
     private UserVO convertFromModel(UserModel userModel){
         if(userModel == null){
             return null;
