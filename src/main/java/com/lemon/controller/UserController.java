@@ -13,13 +13,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author lemonsun
  */
 @Controller("user")
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends BaseController{
 
     @Autowired
     private UserService userService;
@@ -49,14 +51,4 @@ public class UserController {
         return userVO;
     }
 
-    //定义exceptionhandler解决 未被controller层吸收的exception
-    @ExceptionHandler(Exception.class)  //定义收到什么样的exception之后，才会进入它的处理环节
-    @ResponseStatus(HttpStatus.OK)  // 返回http status 200
-    public Object handlerException(HttpServletRequest request,Exception ex){
-        /*handlerException仅仅只能返回页面的路径 无法返回业务处理类返回的ResponseBody这种形式 还需要解决一层问题*/
-        CommonReturnType commonReturnType = new CommonReturnType();
-        commonReturnType.setStatus("fail");
-        commonReturnType.setData(ex);
-        return commonReturnType;
-    }
 }
