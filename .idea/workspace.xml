@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5060c2a-092e-4acf-8a3d-2ea42073cdba" name="Default Changelist" comment="定义通用的返回对象-异常处理02">
+    <list default="true" id="b5060c2a-092e-4acf-8a3d-2ea42073cdba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lemon/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lemon/controller/UserController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,14 +56,14 @@
         <counts>
           <entry key="java" value="3602" />
           <entry key="properties" value="362" />
-          <entry key="txt" value="87" />
+          <entry key="txt" value="110" />
           <entry key="xml" value="1336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="3602" />
-          <entry key="PLAIN_TEXT" value="87" />
+          <entry key="PLAIN_TEXT" value="110" />
           <entry key="Properties" value="362" />
           <entry key="XML" value="1336" />
         </counts>
@@ -364,7 +363,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565253272775" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565253374613" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -449,7 +448,7 @@
       <option name="presentableId" value="Default" />
       <updated>1564972164726</updated>
       <workItem from="1564972241556" duration="4494000" />
-      <workItem from="1565013808966" duration="48397000" />
+      <workItem from="1565013808966" duration="49082000" />
     </task>
     <task id="LOCAL-00001" summary="Mybatis自动生成器">
       <created>1565106613667</created>
@@ -500,11 +499,25 @@
       <option name="project" value="LOCAL" />
       <updated>1565242125222</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="定义通用的返回对象-异常处理02">
+      <created>1565253266444</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1565253266444</updated>
+    </task>
+    <task id="LOCAL-00009" summary="定义通用的返回对象-otp验证码获取">
+      <created>1565253313435</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1565253313435</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52891000" />
+    <option name="totallyTimeSpent" value="53576000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -565,7 +578,8 @@
     <MESSAGE value="定义通用的返回对象-返回错误信息" />
     <MESSAGE value="定义通用的返回对象-异常处理01" />
     <MESSAGE value="定义通用的返回对象-异常处理02" />
-    <option name="LAST_COMMIT_MESSAGE" value="定义通用的返回对象-异常处理02" />
+    <MESSAGE value="定义通用的返回对象-otp验证码获取" />
+    <option name="LAST_COMMIT_MESSAGE" value="定义通用的返回对象-otp验证码获取" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
