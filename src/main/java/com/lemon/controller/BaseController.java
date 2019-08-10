@@ -17,6 +17,8 @@ import java.util.Map;
  */
 public class BaseController {
 
+    public static final String CONTENT_TYPE_FORMED="application/x-www-form-urlencoded";
+
     //定义exceptionhandler解决 未被controller层吸收的exception
     @ExceptionHandler(Exception.class)  //定义收到什么样的exception之后，才会进入它的处理环节
     @ResponseStatus(HttpStatus.OK)  // 返回http status 200

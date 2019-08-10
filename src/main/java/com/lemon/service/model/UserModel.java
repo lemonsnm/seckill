@@ -52,7 +52,7 @@ public class UserModel {
         return gender;
     }
 
-    public void setGender(Byte gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
