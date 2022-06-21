@@ -37,7 +37,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-        <version>8.0.13</version>
+        <version>8.0.28</version>
     </dependency>
 
     <!-- 选择alibaba连接池 管理mysql连接 -->
@@ -131,7 +131,7 @@
             <dependency>
               <groupId>mysql</groupId>
               <artifactId>mysql-connector-java</artifactId>
-              <version>8.0.13</version>
+              <version>8.0.28</version>
             </dependency>
           </dependencies>
 
